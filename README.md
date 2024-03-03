@@ -10,6 +10,7 @@ ATAD is an Active Learning Tool for Matrix-based Detection of Chromatin Domain
 $ git clone https://github.com/shenscore/ATAD
 $ cd ATAD
 $ conda create -n ATAD
+$ conda activate ATAD
 $ pip install requirements.txt
 ```
 
