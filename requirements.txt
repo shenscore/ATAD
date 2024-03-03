@@ -1,0 +1,16 @@
+cooler
+dask
+django
+django-filter
+djangorestframework
+keras
+keras-preprocessing
+pandas
+scikit-learn
+scikit-image
+scipy
+tensorflow
+slugid
+channels[daphne]
+numpy
+
