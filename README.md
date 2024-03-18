@@ -1,26 +1,26 @@
-<!-- <img width="200px" src="https://github.com/shenscore/ATAD/blob/master/doc/logo.png" /> -->
+<!-- <img width="200px" src="https://github.com/shenscore/HTAD/blob/master/doc/logo.png" /> -->
 
 # Introduction
-ATAD is an Active Learning Tool for Matrix-based Detection of Chromatin Domain
+HTAD is an Active Learning Tool for Matrix-based Detection of Chromatin Domain
 
-# Steps to install and run ATAD
+# Steps to install and run HTAD
 
-### (i) Download and install ATAD
+### (i) Download and install HTAD
 ```
-$ git clone https://github.com/shenscore/ATAD
-$ cd ATAD
-$ conda create -n ATAD
-$ conda activate ATAD
+$ git clone https://github.com/shenscore/HTAD
+$ cd HTAD
+$ conda create -n HTAD
+$ conda activate HTAD
 $ pip install requirements.txt
 ```
 
 ### (ii) calculate the potential TADs and corresponding TAD features
 ```
-python /path/to/ATAD/src/calcFeatures.py $cooler 10000,20000,40000 outPrefix
+python /path/to/HTAD/src/calcFeatures.py $cooler 10000,20000,40000 outPrefix
 ```
 then the pickle file of potential TADs will be generated (outPrefix.10k.pkl, outPrefix.20k.pkl, outPrefix.40k.pkl)
 
-### (iii) run the ATAD labeler server and train TAD identification model
+### (iii) run the HTAD labeler server and train TAD identification model
 to start the web server, run:
 ```
 cd dataLabel
