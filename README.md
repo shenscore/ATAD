@@ -53,7 +53,7 @@ given the sDI value at the highest resolution (e.g. 10kb), run:
 ```
 python mergeTAD.py 10000 di_check_value.10k 10k.bedpe,20k.bedpe,40k.bedpe final.bedpe
 ```
-<img width="500px" src="[https://github.com/shenscore/HTAD/blob/master/doc/logo.png](https://github.com/shenscore/HTAD/blob/master/docs/pic1.png)" />
+<img width="800px" src="https://github.com/shenscore/HTAD/blob/master/docs/pic1.png" />
 
 
 
