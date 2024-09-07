@@ -9,7 +9,7 @@ HTAD is an Active Learning Tool for Matrix-based Detection of Chromatin Domain
 ```
 $ git clone https://github.com/shenscore/HTAD
 $ cd HTAD
-$ conda create -n HTAD
+$ conda create -n HTAD python=3.11
 $ conda activate HTAD
 $ pip install -r requirements.txt
 ```
