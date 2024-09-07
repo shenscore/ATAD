@@ -11,7 +11,7 @@ $ git clone https://github.com/shenscore/HTAD
 $ cd HTAD
 $ conda create -n HTAD
 $ conda activate HTAD
-$ pip install requirements.txt
+$ pip install -r requirements.txt
 ```
 
 ### (ii) calculate the potential TADs and corresponding TAD features
