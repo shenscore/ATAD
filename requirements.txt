@@ -13,4 +13,4 @@ tensorflow
 slugid
 channels[daphne]
 numpy
-
+dask[dataframe]
