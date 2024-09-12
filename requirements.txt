@@ -1,5 +1,6 @@
 cooler
 dask==2024.8.2
+dask[dataframe]
 django==4.2
 django-filter==23.5
 djangorestframework==3.14.0
