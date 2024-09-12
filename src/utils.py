@@ -162,9 +162,19 @@ def calcFeaturesHorseNew(tad,oe,label):
         #     except IndexError:
         #         v = 0
         #     vertex.append(v)
-
-        H = oe[i:(i+3),i:(j+1)].mean() - oe[(i-3):i,i:(j+1)].mean()
-        V = oe[i:(j+1),(j-3):j].mean() - oe[i:(j+1),(j+1):(j+4)].mean()
+        
+        if i<=2:
+            V = oe[i:(j+1),(j-3):j].mean() - oe[i:(j+1),(j+1):(j+4)].mean()
+            H = V
+        elif j+4>=oe.shape[0]:
+            H = oe[i:(i+3),i:(j+1)].mean() - oe[(i-3):i,i:(j+1)].mean()
+            V = H
+        else:
+            H = oe[i:(i+3),i:(j+1)].mean() - oe[(i-3):i,i:(j+1)].mean()
+            V = oe[i:(j+1),(j-3):j].mean() - oe[i:(j+1),(j+1):(j+4)].mean()
+            
+        # H = oe[i:(i+3),i:(j+1)].mean() - oe[(i-3):i,i:(j+1)].mean()
+        # V = oe[i:(j+1),(j-3):j].mean() - oe[i:(j+1),(j+1):(j+4)].mean()
         # try:
         #     H = oe[i,i:(i+5)] - oe[(i-1),i:(i+5)]
         # except IndexError:
