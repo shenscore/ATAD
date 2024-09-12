@@ -780,7 +780,7 @@ def calcDIBorderRobust(pixels,zeros,window=10,ncpu=8,calcDI_check=False):
     # border = np.where(di_ == 2)[0]
     border = np.where(di_check)[0]
     border = insert_nans(border,zeros) # correct border position
-    border = np.append(border,[0,shape-1]) # add the start and end bin of each chromosome
+    border = np.concatenate(([0],border,[shape-1])) # add the start and end bin of each chromosome
     print('border number : '+str(len(border)))
 
     # below is the di_check_value calculation for final TAD merge
