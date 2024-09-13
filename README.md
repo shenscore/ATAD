@@ -34,6 +34,8 @@ then the server will select samples (50 for each round) for manual labeling.
 
 The webpage will show corresponding heatmap with TAD marked by yellow triangle.
 
+<img width="1000px" src="https://github.com/shenscore/HTAD/blob/master/docs/HTADdemo.gif" />
+
 You can quickly judge whether current TAD is real.
 
 after each round, the server will generate a XX_roundX.h5 model file.
