@@ -47,7 +47,7 @@ Note that we could just use the model trained by the highest resolution to predi
 ### (iv) predict the real TADs from potential TADs
 given the well trained TAD model file model.h5, run:
 ```
-python predictTAD.py model.h5 potentialTAD.10k.pkl,potentialTAD.20k.pkl,potentialTAD.40k.pkl 10000,20000,40000 Test
+python predictTAD.py model.h5 potentialTAD.10k.pkl,potentialTAD.20k.pkl,potentialTAD.40k.pkl 10000,20000,40000 0 Test
 ```
 Test.10k.bedpe Test.20k.bedpe Test.40k.bedpe
 ### (v) merge the multi-resolution TAD results
