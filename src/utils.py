@@ -1103,10 +1103,10 @@ def predictTADmultiRes_(modelfile_list,featurefile_list,resolution_list = [5000,
     if len(modelfile_list) == 1:
         modelfile = modelfile_list[0]
         for featurefile,resolution in zip(featurefile_list, resolution_list):
-            predictTAD(modelfile,featurefile,resolution,outfname)
+            predictTAD_(modelfile,featurefile,resolution,outfname)
     else:
         for modelfile,featurefile,resolution in zip(modelfile_list,featurefile_list, resolution_list):
-            predictTAD(modelfile,featurefile,resolution,outfname)
+            predictTAD_(modelfile,featurefile,resolution,outfname)
 
 
 def align_boundary(domain_file_list,score_file,out_file,distance=6,res=10000):
