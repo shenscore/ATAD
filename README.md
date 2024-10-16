@@ -14,9 +14,23 @@ $ pip install -r requirements.txt
 # Run HTAD
 ### (i) calculate the potential TADs and corresponding TAD features
 ```
-python /path/to/HTAD/src/calcFeatures.py $cooler 10000,20000,40000 outPrefix
+python /path/to/HTAD/src/calcFeatures.py [cooler] [resolutions] [outPrefix]
+# example
+python /path/to/HTAD/src/calcFeatures.py test.mcool 10000,20000,40000 Test
 ```
 then the pickle file of potential TADs will be generated (outPrefix.10k.pkl, outPrefix.20k.pkl, outPrefix.40k.pkl)
+
+parameters: 
+cooler: cooler file of Hi-C data
+
+resolutions: resolutions used to calculate potential TADs and corresponding TAD features, separated by ','.
+
+outPrefix: prefix of output files
+
+**Output:**
+
++ outPrefix.10k.pkl, outPrefix.20k.pkl, outPrefix.40k.pkl
+
 
 ### (ii) run the HTAD labeler server and train TAD identification model
 to start the web server, run:
@@ -26,7 +40,13 @@ python manage.py runserver
 ```
 Then visit the corresponding port: e.g. 127.0.0.1:8000
 
-input: the path of your cooler file and feature file of potential TADs, resolution, label(prefix) for current TAD identification model
+**Input:**
+
++  the file path of your cooler file and feature file of potential TADs
+
++  resolution of the feature file
+
++  label(prefix) for the output TAD identification model file
 
 then the server will select samples (50 for each round) for manual labeling.
 
