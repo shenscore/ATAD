@@ -3,9 +3,7 @@
 # Introduction
 HTAD is an Active Learning Tool for Matrix-based Detection of Chromatin Domain
 
-# Steps to install and run HTAD
-
-### (i) Download and install HTAD
+# Installing HTAD
 ```
 $ git clone https://github.com/shenscore/HTAD
 $ cd HTAD
@@ -13,14 +11,14 @@ $ conda create -n HTAD python=3.11
 $ conda activate HTAD
 $ pip install -r requirements.txt
 ```
-
-### (ii) calculate the potential TADs and corresponding TAD features
+# Run HTAD
+### (i) calculate the potential TADs and corresponding TAD features
 ```
 python /path/to/HTAD/src/calcFeatures.py $cooler 10000,20000,40000 outPrefix
 ```
 then the pickle file of potential TADs will be generated (outPrefix.10k.pkl, outPrefix.20k.pkl, outPrefix.40k.pkl)
 
-### (iii) run the HTAD labeler server and train TAD identification model
+### (ii) run the HTAD labeler server and train TAD identification model
 to start the web server, run:
 ```
 cd dataLabel
@@ -44,13 +42,13 @@ we suggest that the model should be trained in around 10 rounds with the highest
 
 Note that we could just use the model trained by the highest resolution to predict the real TAD from other resolutions.
 
-### (iv) predict the real TADs from potential TADs
+### (iii) predict the real TADs from potential TADs
 given the well trained TAD model file model.h5, run:
 ```
 python predictTAD.py model.h5 potentialTAD.10k.pkl,potentialTAD.20k.pkl,potentialTAD.40k.pkl 10000,20000,40000 0 Test
 ```
 Test.10k.bedpe Test.20k.bedpe Test.40k.bedpe
-### (v) merge the multi-resolution TAD results
+### (iv) merge the multi-resolution TAD results
 given the sDI value at the highest resolution (e.g. 10kb), run:
 ```
 python mergeTAD.py 10000 di_check_value.10k 10k.bedpe,20k.bedpe,40k.bedpe final.bed
