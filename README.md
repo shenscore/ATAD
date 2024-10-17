@@ -98,6 +98,8 @@ python mergeTAD.py 10000 di_check_value.10k 10k.bedpe,20k.bedpe,40k.bedpe final.
 + **TAD files of multiple resolutions**: TAD files of multiple resolutions generated from previous step, separated by ','.
 + **output file**
 
+For visualization, we recommend utilizing [pyGenomeTracks](https://github.com/deeptools/pyGenomeTracks) or [juicebox](https://github.com/aidenlab/Juicebox).
+
 <img width="800px" src="https://github.com/shenscore/HTAD/blob/master/docs/pic1.png" />
 
 
