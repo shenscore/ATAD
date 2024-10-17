@@ -29,7 +29,7 @@ then the pickle file of potential TADs will be generated (outPrefix.10k.pkl, out
 + **outPrefix**: prefix of output files
 
 **Output:**
-
++ *.di_check_value
 + outPrefix.10k.pkl, outPrefix.20k.pkl, outPrefix.40k.pkl
 
 
@@ -85,8 +85,7 @@ python predictTAD.py model.h5 potentialTAD.10k.pkl,potentialTAD.20k.pkl,potentia
 
 **Output:**
 + Test.10k.bedpe Test.20k.bedpe Test.40k.bedpe
-### (iv) merge the multi-resolution TAD results
-given the sDI value at the highest resolution (e.g. 10kb), run:
+### (iv) Merge the multi-resolution TAD results
 ```
 python mergeTAD.py [resolution] [DI check value file] [TAD files of multiple resolutions] [output file]
 # example
