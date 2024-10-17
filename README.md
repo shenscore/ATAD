@@ -55,6 +55,9 @@ Then the server will select samples (50 for each round) for manual labeling.
 
 The webpage will show corresponding heatmap with TAD marked by **yellow triangle**.
 
+<img width="800px" src="https://github.com/shenscore/HTAD/blob/master/docs/demo2.png" />
+
+
 <img width="1000px" src="https://github.com/shenscore/HTAD/blob/master/docs/HTADdemo.gif" />
 
 You can quickly judge whether current TAD is real. We also provide the prediction of current model in the interface.
@@ -100,6 +103,7 @@ python mergeTAD.py 10000 di_check_value.10k 10k.bedpe,20k.bedpe,40k.bedpe final.
 For visualization, we recommend utilizing [pyGenomeTracks](https://github.com/deeptools/pyGenomeTracks) or [juicebox](https://github.com/aidenlab/Juicebox).
 
 <img width="800px" src="https://github.com/shenscore/HTAD/blob/master/docs/pic1.png" />
+
 
 
 
