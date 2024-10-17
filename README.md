@@ -51,17 +51,17 @@ Then visit the corresponding port: e.g. 127.0.0.1:8000
 
 +  label(prefix) for the output TAD identification model file
 
-then the server will select samples (50 for each round) for manual labeling.
+Then the server will select samples (50 for each round) for manual labeling.
 
-The webpage will show corresponding heatmap with TAD marked by yellow triangle.
+The webpage will show corresponding heatmap with TAD marked by **yellow triangle**.
 
 <img width="1000px" src="https://github.com/shenscore/HTAD/blob/master/docs/HTADdemo.gif" />
 
-You can quickly judge whether current TAD is real.
+You can quickly judge whether current TAD is real. We also provide the prediction of current model in the interface.
 
-after each round, the server will generate a XX_roundX.h5 model file.
+After each round, the server will generate a XX_roundX.h5 model file.
 
-we suggest that the model should be trained in around 10 rounds with the highest resolution to get the best performance.
+We suggest that the model should be trained in around 10 rounds with the highest resolution to get the best performance.
 
 Note that we could just use the model trained by the highest resolution to predict the real TAD from other resolutions.
 
