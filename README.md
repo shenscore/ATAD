@@ -29,7 +29,7 @@ then the pickle file of potential TADs will be generated (outPrefix.10k.pkl, out
 + **outPrefix**: prefix of output files
 
 **Output:**
-+ *.di_check_value
++ outPrefix.di_check_value
 + outPrefix.10k.pkl, outPrefix.20k.pkl, outPrefix.40k.pkl
 
 
