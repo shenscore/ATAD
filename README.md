@@ -64,6 +64,7 @@ after each round, the server will generate a XX_roundX.h5 model file.
 we suggest that the model should be trained in around 10 rounds with the highest resolution to get the best performance.
 
 Note that we could just use the model trained by the highest resolution to predict the real TAD from other resolutions.
+
 **Output:**
 + \*round\*.h5
 + *finalmodel.h5
