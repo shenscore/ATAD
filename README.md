@@ -55,7 +55,7 @@ Then the server will select samples (50 for each round) for manual labeling.
 
 The webpage will show corresponding heatmap with TAD marked by **yellow triangle**.
 
-<img width="800px" src="https://github.com/shenscore/HTAD/blob/master/docs/demo2.png" />
+<img width="500px" src="https://github.com/shenscore/HTAD/blob/master/docs/demo2.png" />
 
 
 <img width="1000px" src="https://github.com/shenscore/HTAD/blob/master/docs/HTADdemo.gif" />
