@@ -3,6 +3,7 @@
 # Introduction
 HTAD is an Active Learning Tool for Matrix-based Detection of Chromatin Domain
 
+The instructions below or [this video](https://youtu.be/6sXjTXPWQEI?si=YFzYAEPfdwdMyXb4) can help you install and run HTAD.
 # Installing HTAD
 We recommand using [conda](https://github.com/conda/conda) to install HTAD.
 ```
