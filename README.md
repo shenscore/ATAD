@@ -17,11 +17,12 @@ $ pip install -r requirements.txt
 ### (i) Feature extraction
 Calculate the potential TADs and corresponding TAD features.
 ```
-python /path/to/HTAD/src/calcFeatures.py [cooler] [resolutions] [outPrefix]
+python /path/to/HTAD/src/calcFeatures.py [cooler] [resolution(s)] [outPrefix]
 # example
-python /path/to/HTAD/src/calcFeatures.py test.mcool 10000,20000,40000 Test
+python /path/to/HTAD/src/calcFeatures.py /path/to/HTAD/test_data/sim1.mcool 10000,20000,40000 Test
+# then the pickle file of potential TADs will be generated (Test.10k.pkl, Test.20k.pkl, Test.40k.pkl)
 ```
-then the pickle file of potential TADs will be generated (outPrefix.10k.pkl, outPrefix.20k.pkl, outPrefix.40k.pkl)
+
 
 **parameters**: 
 + **cooler**: cooler file of Hi-C data
@@ -77,7 +78,7 @@ Note that we could just use the model trained by the highest resolution to predi
 ### (iii) TAD identification
 given the well trained TAD model file model.h5, run:
 ```
-python predictTAD.py [model] [feature files of potential TADs] [resolutions] [n] [outPrefix]
+python predictTAD.py [model] [feature file(s) of potential TADs] [resolution(s)] [n] [outPrefix]
 # example
 python predictTAD.py model.h5 potentialTAD.10k.pkl,potentialTAD.20k.pkl,potentialTAD.40k.pkl 10000,20000,40000 0 Test
 ```
