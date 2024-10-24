@@ -5,7 +5,7 @@ HTAD is an Active Learning Tool for Matrix-based Detection of Chromatin Domain
 
 The instructions below or [this video](https://youtu.be/6sXjTXPWQEI?si=YFzYAEPfdwdMyXb4) can help you install and run HTAD.
 # Installing HTAD
-We recommand using [conda](https://github.com/conda/conda) to install HTAD.
+We recommend using [conda](https://github.com/conda/conda) to install HTAD.
 ```
 $ git clone https://github.com/shenscore/HTAD
 $ cd HTAD
@@ -13,7 +13,7 @@ $ conda create -n HTAD python=3.11
 $ conda activate HTAD
 $ pip install -r requirements.txt
 ```
-# Run HTAD
+# Running HTAD
 ### (i) Feature extraction
 Calculate the potential TADs and corresponding TAD features.
 ```
