@@ -63,13 +63,13 @@ The webpage will show corresponding heatmap with TAD marked by **yellow triangle
 
 <img width="1000px" src="https://github.com/shenscore/HTAD/blob/master/docs/HTADdemo.gif" />
 
-You can quickly judge whether current TAD is real. We also provide the prediction of current model in the interface.
+You can quickly judge whether current TAD is positive. We also provide the prediction of current model in the interface.
 
 After each round, the server will generate a XX_roundX.h5 model file.
 
-We suggest that the model should be trained in around 10 rounds with the highest resolution to get the best performance.
+We suggest that the model should be trained in around 11 rounds with the highest resolution to get the best performance.
 
-Note that we could just use the model trained by the highest resolution to predict the real TAD from other resolutions.
+Note that we could just use the model trained by the highest resolution to identify TAD from other resolutions.
 
 **Output:**
 + \*round\*.h5
