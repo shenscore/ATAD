@@ -20,7 +20,6 @@ Calculate the potential TADs and corresponding TAD features.
 python /path/to/HTAD/src/calcFeatures.py [cooler] [resolution(s)] [outPrefix]
 # example
 python /path/to/HTAD/src/calcFeatures.py /path/to/HTAD/test_data/sim1.mcool 10000,20000,40000 Test
-# then the pickle file of potential TADs will be generated (Test.10k.pkl, Test.20k.pkl, Test.40k.pkl)
 ```
 
 
