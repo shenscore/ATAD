@@ -37,21 +37,23 @@ python /path/to/HTAD/src/calcFeatures.py /path/to/HTAD/test_data/sim1.mcool 1000
 
 ### (ii) Manual annotation
 Run the HTAD labeler server and train TAD identification model.
-
-to start the web server, run:
+#### (1). Launch TAD labeler
+to start TAD labeler, run:
 ```
 cd dataLabel
 python manage.py runserver
 ```
 Then visit the corresponding port: e.g. 127.0.0.1:8000
 
-**Input:**
+#### (2). Submit input file
+<img width="500px" src="https://github.com/user-attachments/assets/1790fe96-87ee-450b-aa48-44a9add4fda1">
 
+**Input:**
 +  the file path of your cooler file and feature file of potential TADs
 
 +  resolution of the feature file
 
-+  label(prefix) for the output TAD identification model file
++  tag(prefix) for the output TAD identification model file
 
 Then the server will select samples (50 for each round) for manual labeling.
 
