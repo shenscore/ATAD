@@ -46,7 +46,7 @@ python manage.py runserver
 Then visit the corresponding port: e.g. 127.0.0.1:8000
 
 #### (2). Submit input file
-<img width="500px" src="https://github.com/user-attachments/assets/1790fe96-87ee-450b-aa48-44a9add4fda1">
+<img width="500px" src="https://github.com/shenscore/HTAD/blob/master/docs/HTAD_submit.png">
 
 **Input:**
 +  the file path of your cooler file and feature file of potential TADs
